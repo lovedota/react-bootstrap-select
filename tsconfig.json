@@ -1,0 +1,30 @@
+{
+    "compileOnSave": false,
+    "buildOnSave": false,
+    "compilerOptions": {
+        "target": "es6",
+        "module": "es2015",
+        "jsx": "react",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    },
+    "files": [
+        "src/modules/bootstrap-select.d.ts",
+        "src/modules/react-bootstrap.d.ts",
+        "typings/jquery/jquery.d.ts",
+        "typings/react-bootstrap/react-bootstrap.d.ts",
+        "typings/react/react-dom.d.ts",
+        "typings/react/react.d.ts",
+        "typings/tsd.d.ts",
+        "src/js/select-picker.tsx"
+    ]
+}
