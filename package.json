@@ -41,6 +41,6 @@
     "react-dom": ">=0.14.0",
     "jquery": ">=2.2.0",
     "bootstrap-sass": "^3.3.6",
-    "bootstrap-select": "^1.9.4",
+    "bootstrap-select": "^1.9.4"
   }
 }
