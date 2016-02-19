@@ -7,7 +7,13 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].js',
-        publicPath: '/assets/'
+        publicPath: '/assets/',
+        library: 'ReactBoostrapSelect',
+        libraryTarget: 'umd'
+    },
+    externals: {
+        'react': 'react',
+        'react-dom': 'react-dom'
     },
     module: {
       loaders: [

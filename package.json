@@ -1,10 +1,10 @@
 {
-  "name": "react-flux-sample-1",
+  "name": "react-bootstrap-select",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-     "prepublish": "webpack --production"
+     "build": "webpack --production"
   },
   "author": "",
   "license": "ISC",
