@@ -6,7 +6,43 @@
 - Then uses *gulp-webpack* to bundle it into one file
 
 #Demo
-![Demo Image](https://azzm1q-bn1305.files.1drv.com/y3md44l9NYNLx8wGMnygWK1fnK8n6dcRtL6sEeaEIORsvzuOje9oKgzFjIERpXosCdnU9CgWkuncAcyQRHMiqB7p2zDze-StT3n9MPOzBqAdyG3WpIE4KjsZb84yuLYOiFbYBdX0iHqo5P7woRHAhaIZ11-dubkUWfErV_TMFUtHVQ/new-flux-store-utils.gif?psid=1)
+
+### Single Select
+
+``` js
+import SelectPicker from "react-select-picker";
+
+<SelectPicker
+    className="form-control"
+    title="Select Cities"
+    disabled={this.props.isDisabled}
+    defaultValue={this.props.selectedCityIds}
+    onChange={this.onChange.bind(this)}
+>
+    {options}
+</SelectPicker>
+```
+
+### Multiple Select
+
+``` js
+import SelectPicker from "react-select-picker";
+
+<SelectPicker
+    className="form-control"
+    title="Select Cities"
+    multiple
+    disabled={this.props.isDisabled}
+    defaultValue={this.props.selectedCityIds}
+    onChange={this.onChange.bind(this)}
+>
+    {options}
+</SelectPicker>
+```
+
+### Demo repository
+
+- https://github.com/lovedota/react-typescript-gulp-webpack
 
 # Run
 

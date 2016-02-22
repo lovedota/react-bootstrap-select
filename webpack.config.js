@@ -8,13 +8,13 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].js',
         publicPath: '/assets/',
-        library: 'ReactBoostrapSelect',
+        library: 'ReactSelectPicker',
         libraryTarget: 'umd'
     },
     externals: {
         'react': 'react',
         'react-dom': 'react-dom',
-        'jquery': 'jQuery'
+        'jquery': 'jquery'
     },
     module: {
       loaders: [
@@ -47,8 +47,6 @@ module.exports = {
     resolve: {
        extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js'],
        alias: {
-           'bootstrap/js': 'bootstrap-sass/assets/javascripts/bootstrap.js',
-           'bootstrap/css': 'bootstrap-sass/assets/stylesheets/_bootstrap.scss',
            'bootstrap-select/js': 'bootstrap-select/js/bootstrap-select.js',
            'bootstrap-select/css': 'bootstrap-select/sass/bootstrap-select.scss'
        }
