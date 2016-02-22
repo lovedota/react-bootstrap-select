@@ -1,6 +1,6 @@
 {
   "name": "react-select-picker",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "A React Select Picker from bootstrap-select library",
   "main": "dist/index.js",
   "scripts": {
