@@ -13,8 +13,7 @@ module.exports = {
     },
     externals: {
         'react': 'react',
-        'react-dom': 'react-dom',
-        'jquery': 'jquery'
+        'react-dom': 'react-dom'
     },
     module: {
       loaders: [

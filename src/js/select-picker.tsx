@@ -1,5 +1,3 @@
-import "jquery";
-
 import "bootstrap-select/js";
 import "bootstrap-select/css";
 
