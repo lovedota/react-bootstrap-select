@@ -1,8 +1,6 @@
 import "jquery";
-import "bootstrap/js";
-import "bootstrap-select/js";
 
-import "bootstrap/css";
+import "bootstrap-select/js";
 import "bootstrap-select/css";
 
 import * as React from "react";
@@ -19,34 +17,34 @@ interface Props {
 }
 
 class SelectPicker extends React.Component<Props, any> {
-    private _element: JQuery;
+    private element: JQuery;
 
     public componentDidMount() {
-        this._element = $(ReactDOM.findDOMNode(this)).selectpicker();
+        this.element = $(ReactDOM.findDOMNode(this)).selectpicker();
 
-        this._element.selectpicker("val", this.props.defaultValue || []);
+        this.element.selectpicker("val", this.props.defaultValue || []);
 
-        this._element.on("changed.bs.select", () => {
-            this.props.onChange(this._element.selectpicker("val"));
+        this.element.on("changed.bs.select", () => {
+            this.props.onChange(this.element.selectpicker("val"));
         });
     }
 
     public componentWillUnmount() {
-        this._element.off("changed.bs.select");
-        this._element.selectpicker("destroy");
+        this.element.off("changed.bs.select");
+        this.element.selectpicker("destroy");
     }
 
     public componentDidUpdate() {
-        this._element.selectpicker("refresh");
+        this.element.selectpicker("refresh");
     }
 
     public setValue(newValue) {
-        this._element.selectpicker("val", newValue);
-        this._element.selectpicker("refresh");
+        this.element.selectpicker("val", newValue);
+        this.element.selectpicker("refresh");
     }
 
     public hide() {
-        this._element.parent("div.bootstrap-select").removeClass("open");
+        this.element.parent("div.bootstrap-select").removeClass("open");
     }
 
     public render() {
