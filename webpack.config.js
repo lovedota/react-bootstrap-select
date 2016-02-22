@@ -32,10 +32,6 @@ module.exports = {
             loader: 'url?limit=150000'
         },
         {
-            test: require.resolve('jquery'),
-            loader: 'expose?$!expose?jQuery'
-        },
-        {
             test: /\.less$/,
             loaders: ['style', 'css', 'less']
         }

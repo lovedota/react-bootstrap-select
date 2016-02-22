@@ -1,4 +1,11 @@
+React-Select
+============
+
+A Select control built for [React](http://facebook.github.io/react/index.html) from [Bootstrap Select](https://silviomoreto.github.io/bootstrap-select/).
+
+
 #Description
+
 - This project is for learning Typescript with React
 - This project uses new *Flux Utils ReduceStore* pattern https://facebook.github.io/flux/docs/flux-utils.html
 - This project uses *tslint* for checking coding styles http://palantir.github.io/tslint/
@@ -54,3 +61,7 @@ npm install -g tsd
 tds reinstall -so
 gulp serve
 ```
+
+# Tips
+
+https://gist.github.com/coolaj86/1318304
