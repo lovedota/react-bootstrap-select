@@ -134,7 +134,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    newProps[prop] = this.props[prop];
 	                }
 	            }
-	            return React.createElement("select", React.__spread({}, newProps), this.props.children);
+	            return React.createElement("select", Object.assign({}, newProps), this.props.children);
 	        }
 	    }]);
 
